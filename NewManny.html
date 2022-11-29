@@ -1,0 +1,154 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Customer</title>
+
+<style>
+  
+.a {
+  display: inline-block;
+  border: 1px solid red;
+  padding: 1rem 1rem;
+  vertical-align: middle;
+}
+
+.e {
+  display: inline-block;
+  border: 1px solid red;
+  padding: 1rem 1rem;
+  vertical-align: middle;
+}
+
+.a {
+  font-family: arial;
+  font-size: 10px;
+  margin-left:400px;
+  margin-top:40px;
+  width: 400px;
+  height: 280px;
+border: 2.5px solid black;
+margin-bottom:40px;
+  
+}
+.b {
+  font-family: arial;
+  font-size: 12px;
+margin-left:120px;
+  width: 75px;
+  height: 30px;
+text-align: center;
+border: 2px solid black;
+margin-bottom:40px;
+  
+}
+.c {
+  font-family: arial;
+  font-size: 16px;
+  margin-left: 40px;
+  width: 320px;
+  height: 180px;
+text-align: center;
+    margin-top:100px;
+border: 2px solid black;
+margin-top:30px;
+
+}
+
+.d {
+  font-family: arial;
+  font-size: 12px;
+
+  width: 75px;
+  height: 30px;
+text-align: center;
+    margin-top:10px;
+border: 2px solid black;
+margin-left:80px;
+
+}
+.e {
+  font-family: arial;
+  font-size: 13px;
+margin-left:40px;
+  width: 320px;
+  height: 190px;
+text-align: center;
+    margin-top:100px;
+border: 2px solid black;
+
+}
+.f{
+  font-family: arial;
+  font-size: 12px;
+  width: 75px;
+  height: 30px;
+text-align: center;
+    margin-top:10px;
+border: 2px solid black;
+margin-left:80px;
+}
+.l{
+  font-family: arial;
+  font-size: 15px;
+  margin-left:400px;
+  margin-top:40px;
+  width: 400px;
+  height: 100px;
+border: 2.5px solid black;
+
+}
+
+p {
+  /* Center horizontally*/
+  text-align: center;
+}
+
+
+</style>
+
+</head>
+<body background="newuser2.jpg" >
+
+
+<div class='parent' >
+
+<div class="a">
+<h1><p> New Manny Registration </p><h1>
+ <form action="insertmanny.php" method="POST">
+  <table >
+   <tr>
+    <td>Name :</td>
+    <td><input type="text" name="username" required></td>
+   </tr>
+   <tr>
+    <td><b>Type :</b></td>
+    <td>
+     <select name="mtype" required>
+      <option selected hidden value="">Select city</option>
+      <option value="FT">Full Time</option>
+      <option value="Community">Community Mother</option>
+     </select>
+    </td>
+   </tr>
+
+ <tr>
+    <td>City :</td>
+    <td>
+     <select name="citycode" required>
+      <option selected hidden value="">Select city</option>
+      <option value="101">KOL</option>
+      <option value="102">CHN</option>
+     </select>
+     <input type="text" name="city" required>
+    </td>
+   </tr>
+ </div>
+   <tr>
+    <td ><input type="submit" value="Submit" name="submit" class="b"></td>
+   </tr>
+  </table>
+ </form>
+
+</body>
+</html>
+

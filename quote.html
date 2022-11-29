@@ -1,0 +1,109 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Search</title>
+  <style>
+  .a {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 8px;
+  margin-left:400px;
+  margin-top:180px;
+  width: 400px;
+  height:180x;
+border: 2.5px solid black;
+background-color: rgb(204, 251, 245);
+margin-bottom:40px;
+  
+}
+.b {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 14px;
+margin-left:120px;
+  width: 75px;
+  height: 30px;
+text-align: center;
+border: 2px solid black;
+margin-bottom:40px;
+}
+p {
+  /* Center horizontally*/
+  
+  text-align: center;
+}
+td{
+  color:rgb(23, 24, 27);
+}
+  </style>
+
+</head>
+<body background="ewaste.png">
+  
+
+  
+<div class="a">
+  <h1><p> Submit Your Quote Please !!! </p><h1>
+   <form action="quote.php" method="POST">
+    <table >
+     <tr>
+      <td> Company Name :</td>
+      <td><input type="text" name="username" required></td>
+     </tr>
+      
+     <tr>
+      <td>Email :</td>
+      <td><input type="email" name="email" required></td>
+     </tr> 
+  
+     <tr>
+      <td>Phone no :</td>
+      <td>
+       <select name="phoneCode" required>
+        <option selected hidden value="">Select Code</option>
+        <option value="977">977</option>
+        <option value="978">978</option>
+        <option value="979">979</option>
+        <option value="973">973</option>
+        <option value="972">972</option>
+        <option value="974">974</option>
+       </select>
+       <input type="number" name="phone" required>
+      </td>
+     </tr>
+  
+   <tr>
+      <td>City :</td>
+      <td>
+       <select name="citycode" required>
+        <option selected hidden value="">Select city</option>
+        <option value="101">KOL</option>
+        <option value="102">CHN</option>
+       </select>
+       <input type="text" name="city" required>
+      </td>
+     </tr>
+   </div>
+   <tr>
+    <td>Category :</td>
+    <td>
+     <select name="cat" required>
+      <option selected hidden value="">Select Category</option>
+      <option value="appliances">Appliances</option>
+      <option value="printers">Printers</option>
+     </select>
+    </td>
+   </tr>
+
+     <tr>
+      <td>Total Weight(KG) :</td>
+      <td>
+       <input type="number" name="weight" required>
+      </td>
+     </tr>
+     <tr>
+      <td ><input type="submit" value="Submit" name="submit" class="b"></td>
+     </tr>
+    </table>
+   </form>
+ </form>
+</body>
+</html>

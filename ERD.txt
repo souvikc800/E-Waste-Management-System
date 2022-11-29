@@ -1,0 +1,66 @@
+CREATE TABLE `City` (
+  `Id` INT,
+  `Name` Varchar,
+  PRIMARY KEY (`Id`)
+);
+
+CREATE TABLE `Admin` (
+  `Email` Varchar,
+  `Password` Varchar,
+  PRIMARY KEY (`Email`)
+);
+
+CREATE TABLE `Customer` (
+  `Id` INT,
+  `Name` Varchar,
+  `Contact` INT,
+  `Email` varchar,
+  `City_Id` INT,
+  `Password` Varchar,
+  PRIMARY KEY (`Id`),
+  FOREIGN KEY (`City_Id`) REFERENCES `City`(`Id`)
+);
+
+CREATE TABLE `Community` (
+  `Id` INT,
+  `Name` Varchar,
+  `Place` Varchar,
+  `Contact` INT,
+  `Tariff` Float,
+  `Rating` Float,
+  `City_Id` INT,
+  PRIMARY KEY (`Id`),
+  FOREIGN KEY (`City_Id`) REFERENCES `City`(`Id`)
+);
+
+CREATE TABLE `New_Recruit` (
+  `Id` INT,
+  `Name` Varchar,
+  `Type` Varchar,
+  `City_Id` INT,
+  PRIMARY KEY (`Id`),
+  FOREIGN KEY (`City_Id`) REFERENCES `City`(`Id`)
+);
+
+CREATE TABLE `FT` (
+  `Id` INT,
+  `Name` Varchar,
+  `Contact` INT,
+  `Tariff` Float,
+  `Rating` Float,
+  `City_Id` INT,
+  PRIMARY KEY (`Id`),
+  FOREIGN KEY (`City_Id`) REFERENCES `City`(`Id`)
+);
+
+CREATE TABLE `T/PS/C` (
+  `Id` INT,
+  `Name` Varchar,
+  `Type` Varchar,
+  `Address` Varchar,
+  `Contact` INT,
+  `City_Id` INT,
+  PRIMARY KEY (`Id`),
+  FOREIGN KEY (`City_Id`) REFERENCES `City`(`Id`)
+);
+

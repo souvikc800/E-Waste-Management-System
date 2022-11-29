@@ -1,0 +1,190 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Customer</title>
+  
+<style>
+  
+.a {
+  align-items: center;
+  display: inline-block;
+  border: 1px solid red;
+  padding: 1rem 1rem;
+  vertical-align: middle;
+}
+
+.e {
+  display: inline-block;
+  border: 1px solid red;
+  padding: 1rem 1rem;
+  vertical-align: middle;
+}
+
+.a {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 10px;
+  margin-left:400px;
+  margin-top:40px;
+  width: 400px;
+  height: 280px;
+border: 2.5px solid black;
+margin-bottom:40px;
+  
+}
+.b {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 12px;
+margin-left:120px;
+  width: 75px;
+  height: 30px;
+text-align: center;
+border: 2px solid black;
+margin-bottom:40px;
+  
+}
+.c {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 14px;
+  margin-left: 32px;
+  width: 400px;
+  height: 180px;
+text-align: center;
+    margin-top:100px;
+border: 2px solid black;
+margin-top:32px;
+
+}
+
+.d {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 12px;
+
+  width: 75px;
+  height: 30px;
+text-align: center;
+    margin-top:10px;
+border: 2px solid black;
+margin-left:80px;
+
+}
+.e {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 13px;
+margin-left:40px;
+  width: 320px;
+  height: 190px;
+text-align: center;
+    margin-top:100px;
+border: 2px solid black;
+
+}
+.f{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 12px;
+  width: 75px;
+  height: 30px;
+text-align: center;
+    margin-top:10px;
+border: 2px solid black;
+margin-left:80px;
+}
+.l{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #9FEF75;
+  font-size: 15px;
+  margin-left:400px;
+  margin-top:40px;
+  width: 400px;
+  height: 100px;
+border: 2.5px solid black;
+
+}
+
+p {
+  /* Center horizontally*/
+  text-align: center;
+}
+
+
+</style>
+
+</head>
+<body background="ewaste.png" >
+
+<div class='parent' >
+
+<div class="a">
+<h1><p> Sign Up </p><h1>
+ <form action="insert.php" method="POST">
+  <table >
+   <tr>
+    <td>Name :</td>
+    <td><input type="text" name="username" required></td>
+   </tr>
+    <tr>
+    <td>Password :</td>
+    <td><input type="password" name="password" required></td>
+   </tr>
+   
+   <tr>
+    <td>Email :</td>
+    <td><input type="email" name="email" required></td>
+   </tr> 
+
+   <tr>
+    <td>Phone no :</td>
+    <td>
+     <select name="phoneCode" required>
+      <option selected hidden value="">Select Code</option>
+      <option value="977">977</option>
+      <option value="978">978</option>
+      <option value="979">979</option>
+      <option value="973">973</option>
+      <option value="972">972</option>
+      <option value="974">974</option>
+     </select>
+     <input type="number" name="phone" required>
+    </td>
+   </tr>
+
+ <tr>
+    <td>City :</td>
+    <td>
+     <select name="citycode" required>
+      <option selected hidden value="">Select city</option>
+      <option value="101">KOL</option>
+      <option value="102">CHN</option>
+     </select>
+     <input type="text" name="city" required>
+    </td>
+   </tr>
+ </div>
+   <tr>
+    <td ><input type="submit" value="Submit" name="submit" class="b"></td>
+   </tr>
+  </table>
+ </form>
+
+<p> Already Have an Account?? </p>
+<p><a href="UserLogin.html">Login</a></p>
+
+<div class="c">
+<h2><p>Admin Login</p></h2>
+<form action="Admin.php" method="POST">
+  <table>
+   <tr>
+    <td><b>Email :</b></td>
+    <td><input type="email" name="username" required></td>
+   </tr>
+   <tr>
+    <td><b>Password :</b></td>
+    <td><input type="password" name="password" required></td>
+   </tr>
+</div>
+<tr>
+<td ><input type="submit" value="Submit" name="submit" class="d"></td>
+</tr>
+ </table>
+</body>
+</html>
+
